@@ -1,0 +1,9 @@
+server:
+  port: 8081  # auth-service будет на другом порту
+
+spring:
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8081  # временный issuer
