@@ -7,3 +7,7 @@ spring:
       resource-server:
         jwt:
           issuer-uri: http://localhost:8081  # временный issuer
+
+jwt:
+  secret: "supersecretkey123456"  # лучше хранить в vault или environment
+  expiration-ms: 3600000           # 1 час
